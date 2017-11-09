@@ -1,0 +1,8 @@
+*.pyc
+./static/preop.jpg
+./static/jess_speaking.jpg
+/env
+personalsite.sublime-workspace
+.DS_Store
+*.DS_Store
+main.sublime-workspace

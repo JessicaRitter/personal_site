@@ -1,0 +1,28 @@
+div#main {
+    background-image: url('hero.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 800px;
+
+}
+
+#img{
+    height:40px;
+    width: 100%;
+}
+
+img#img{
+    height: 100%;
+    width: 100%;
+}
+
+img#jess {
+    border-radius: 50%;
+    height:200px;
+    margin-top: 40px;
+}
+
+h1,
+h3 {
+    color:white;
+}
