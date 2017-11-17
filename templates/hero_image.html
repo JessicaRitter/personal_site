@@ -3,21 +3,37 @@
 {% block body %}
 <div class="container" id="main">
     <div class="img" align="center">
-        <img src="./static/jess.jpg" id="jess">
+        <a href="#aboutme" class="jesspicture"><img src="./static/jess.jpg" id="jess"></a>
     </div>
     <h1 align="center">Jessica Ritter</h1>    
     <h3 align="center">Software Engineer</h3>
     <div class="social-media" align="center">
         <a href="https://github.com/JessicaRitter"><i class="fa fa-github" style="font-size:24px;color:white;"></i></a>
         <a href="https://www.linkedin.com/in/jessica-lynn-ritter/"><i class="fa fa-linkedin" style="font-size:24px;color:white"></i></a>
+        <a href="#projects" class="projectfolder"><i class="fa fa-folder" style="font-size:24px;color:white;"></i></a>
          <a href="https://twitter.com/jessicalritter"><i class="fa fa-twitter" style="font-size:24px;color:white;"></i></a>
     </div>
+    <div class="projects" align="center">
+        <h3>ReciMe</h3>
+        <p>ReciMe  aims to help indecisive foodies that want excellent recipes that take into account their dietary restrictions. Users select the meal to search for and ReciMe displays three recipes filtered by their restrictions. Recipes can be found by meal as well as by tag through the tagging page. Users can rate recipes they've made which are displayed on their profile page so they can always find the recipes they loved again.</p>
+        <p><b>Tech Stack: </b>Python/Flask, Bootstrap,AJAX, JQuery,HTML,CSS, Jinja2, Beautiful Soup, Bcrypt, SQLAlchemy, Postgres.</p>
+        <p><a href="https://github.com/JessicaRitter/reciMe"><b>Github Link</b></a></p>
+
+    </div>
+    <script>  
+    $('.projectfolder').click(function(){
+        $('.projects').toggle();
+    });
+    </script>
+    <div class="aboutme">
+        <p>Jessica began her software development career at Socos, a company on a mission to bring pay-walled early childhood development research to busy parents. At Socos she contributed on backend and front-end code, the marketing site, and overall product direction, working alongside a small engineering team and growing their user base from 15 to over 1,000. Next, she worked at the e-commerce startup Stitch Labs, specializing in API support and documentation. It was during this time that she decided to attend Hackbright Academy and make the jump to full-time software engineer. She hopes to use her technical skills and passion for social good to improve the world around her.</p>
+        
+    </div>
+    <script>  
+    $('.jesspicture').click(function(){
+        $('.aboutme').toggle();
+    });
+    </script>
     
-
-
-
-
-
-
 </div>
 {% endblock %}

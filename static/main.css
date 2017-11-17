@@ -23,6 +23,17 @@ img#jess {
 }
 
 h1,
-h3 {
+h3,
+p {
     color:white;
+}
+
+div.projects,
+div.aboutme {
+    background-color:  rgba(72,72,72, 0.6);
+    border-radius: 3px;
+}
+
+img#jess:hover {
+    opacity: 0.4;
 }
