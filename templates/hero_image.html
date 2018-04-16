@@ -1,39 +1,80 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<div class="container" id="main">
-    <div class="img" align="center">
-        <a href="#aboutme" class="jesspicture"><img src="./static/jess.jpg" id="jess"></a>
+<div id="main">
+    <div class="row background-white">
+         <div class="col-lg-6 col-md-6 col-sm-12" align="center">
+            <img src="./static/jessica_ritter.png" id="logoimg" class="header-img">
+        </div>
+         <div class="col-lg-6 col-md-6 col-sm-12" id="about" align="center">
+            <img src="./static/jesslooking.jpg"  class="header-img dot-img">
+            <img src="./static/sunnyjess.jpg" id="jess" class="header-img dot-img">
+            <img src="./static/jess_rotterdam.jpg" class="header-img dot-img">
+        </div>
     </div>
-    <h1 align="center">Jessica Ritter</h1>    
-    <h3 align="center">Software Engineer</h3>
-    <div class="social-media" align="center">
-        <a href="https://github.com/JessicaRitter"><i class="fa fa-github" style="font-size:24px;color:white;"></i></a>
-        <a href="https://www.linkedin.com/in/jessica-lynn-ritter/"><i class="fa fa-linkedin" style="font-size:24px;color:white"></i></a>
-        <a href="#projects" class="projectfolder"><i class="fa fa-folder" style="font-size:24px;color:white;"></i></a>
-         <a href="https://twitter.com/jessicalritter"><i class="fa fa-twitter" style="font-size:24px;color:white;"></i></a>
-    </div>
-    <div class="projects" align="center">
-        <h3>ReciMe</h3>
-        <p>ReciMe  aims to help indecisive foodies that want excellent recipes that take into account their dietary restrictions. Users select the meal to search for and ReciMe displays three recipes filtered by their restrictions. Recipes can be found by meal as well as by tag through the tagging page. Users can rate recipes they've made which are displayed on their profile page so they can always find the recipes they loved again.</p>
-        <p><b>Tech Stack: </b>Python/Flask, Bootstrap,AJAX, JQuery,HTML,CSS, Jinja2, Beautiful Soup, Bcrypt, SQLAlchemy, Postgres.</p>
-        <p><a href="https://github.com/JessicaRitter/reciMe"><b>Github Link</b></a></p>
+</div>
+<div id="work" style="margin-top: 20px;">
+    <h1 align="center" id="myprojects">I love building apps that can help people</h1>
+    <h3 align="center" style="padding-bottom: 50px;">whether serving a larger purpose or just bringing them joy</h3>
+    <div class="row flex-row">
+         <div id="carddeck" class="card-column" data-ride="carousel">
+                <div class="card mb-4 col-lg-3 col-sm-12 grow" id="recime">
+                    <img class="card-img-top img-responsive" src="./static/all_recipes.gif" id="recimegif"></img>
+                    <div class="card-body">
+                        <h3 class="card-title">ReciMe</h3>
+                        <p class="card-text">ReciMe shows recipes filtered by meal type and dietary restriction, displaying three options or as a full list</p>
+                        <p>Tech Stack:Python/Flask, Bootstrap,AJAX, JQuery,HTML,CSS, Jinja2, Beautiful Soup, Bcrypt, SQLAlchemy, Postgres.</p>
+                        <p><a href="https://github.com/JessicaRitter/reciMe">Github Repo</a>
+                        <a href="https://recipeapprecime.herokuapp.com/">ReciMe</a></p> 
+                        
+                    </div>   
+                </div>
+                <div class="card mb-4 col-lg-3 col-sm-12 grow" id="socos">
+                    
+                    <img class="card-img-top img-responsive" src="./static/socoshome.png" id="socoshome">
+                    <!-- <img class="d-block w-50" src="./static/loginmodal.png" id="login"> -->
+                    <div class="card-body">
+                        <h3 class="card-title">Muse by Socos Learning</h3>
+                        <p>
+                            Muse democratizes peer-reviewed early childhood education research 
+                            and provides busy caretakers with the one activity they can do each
+                            day with their child to best promote their unique development.
+                        </p>
+                        <p class="card-text">Muse's first mobile responsive site and login modal
+                         <a href="https://muse.socoslearning.com"><b>Muse</b></a> </p>  
+                    </div>
+                </div>
+                <div class="card mb-4 col-lg-3 col-sm-12 grow" id="valentines">
+                    <img class="card-img-top img-responsive" src="./static/valentines.png" alt="slide-three">
+                    <div class="card-body">
+                        <h3 class="card-title">Valentines Day SVG and Animations App</h3>
+                        <p class="card-text">Web app using svg canvas to create a heart, using animations to
+                        prompt users to click through to see star-wars themed valentines day puns.</p>
+                        <p><a href="https://github.com/JessicaRitter/valentines"><b>Github Link</b></a></p> 
+                        <p><a href="https://valentinesapp.herokuapp.com/">Valentines App</a></p>
+                    </div> 
+                </div>
+                <div class="card mb-4 col-lg-3 col-sm-12 grow" id="markov">
+                    <img class="card-img-top img-responsive" src="./static/markovtwitter.png" alt="slide-four">
+                    <div class="card-body">
+                        <h3 class="card-title">Markov Twitter Generator</h3>
+                        <p class="card-text">Using bi-grams to create states, this app allows users
+                        to create markov chain generated tweets from a public twitter profile inputted.</p>
+                        <p><a href="https://github.com/JessicaRitter/markovtwittergenerator"><b>Github Link</b></a></p> 
+                    </div> 
+                </div>
+        </div>
+    </div> 
+    <h3 align="center" style="padding-top: 20px;">I believe tech should empower users to live their best lives</h3>
+</div>
+<div class="container-fluid white-background">
+    <nav class="footer fixed-bottom" id="contact">
+        <h2 align="center" style="margin-bottom:50px;padding-top:20px;">Are we like-minded? Let's chat:</h2>
+            <div class="social-media" align="center">
+            <a href="https://github.com/JessicaRitter"><i class="fa fa-github" style="font-size:50px;color:black;"></i></a>
+            <a href="https://www.linkedin.com/in/jessica-lynn-ritter/"><i class="fa fa-linkedin" style="font-size:50px;color:black"></i></a>
+             <a href="https://twitter.com/jessicalritter"><i class="fa fa-twitter" style="font-size:50px;color:black;"></i></a>
+    </nav>
 
-    </div>
-    <script>  
-    $('.projectfolder').click(function(){
-        $('.projects').toggle();
-    });
-    </script>
-    <div class="aboutme">
-        <p>Jessica began her software development career at Socos, a company on a mission to bring pay-walled early childhood development research to busy parents. At Socos she contributed on backend and front-end code, the marketing site, and overall product direction, working alongside a small engineering team and growing their user base from 15 to over 1,000. Next, she worked at the e-commerce startup Stitch Labs, specializing in API support and documentation. It was during this time that she decided to attend Hackbright Academy and make the jump to full-time software engineer. She hopes to use her technical skills and passion for social good to improve the world around her.</p>
-        
-    </div>
-    <script>  
-    $('.jesspicture').click(function(){
-        $('.aboutme').toggle();
-    });
-    </script>
-    
 </div>
 {% endblock %}

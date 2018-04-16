@@ -1,5 +1,5 @@
 from jinja2 import StrictUndefined
-
+from flask_debugtoolbar import DebugToolbarExtension
 from flask import Flask, jsonify, render_template, redirect, request, flash, session
 # from flask_debugtoolbar import DebugToolbarExtension
 
@@ -17,7 +17,7 @@ app.jinja_env.undefined = StrictUndefined
 
 @app.route('/')
 def show_home():
-    greeting = "Hello World"
+    # greeting = "Hello World"
     return render_template('hero_image.html')
 
 
@@ -43,8 +43,8 @@ if __name__ == "__main__":
     # connect_to_db(app)
 
     # Use the DebugToolbar
-    # DebugToolbarExtension(app)
+    DebugToolbarExtension(app)
 
 
 
-    app.run(port=5003, host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000)
